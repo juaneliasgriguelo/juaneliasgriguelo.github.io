@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>Juan Elias Griguelo - Curriculum Vitae</title>
+        <!-- Fuentes -->
+		<script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Fuentes -->
+		<!-- Estilo CSS -->
+        <link href="css/estilos.css" rel="stylesheet" />
+		<!-- Estilo CSS -->
+		<!-- Bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Bootstrap-->
+		<script>
+		window.addEventListener('DOMContentLoaded', event => {
+
+			var navbarShrink = function () {
+				const navbarCollapsible = document.body.querySelector('#mainNav');
+				if (!navbarCollapsible) {
+					return;
+				}
+				if (window.scrollY === 0) {
+					navbarCollapsible.classList.remove('navbar-shrink')
+				} else {
+					navbarCollapsible.classList.add('navbar-shrink')
+				}
+			
+			};
+			
+			navbarShrink();
+			
+			document.addEventListener('scroll', navbarShrink);
+			
+			const mainNav = document.body.querySelector('#mainNav');
+			if (mainNav) {
+				new bootstrap.ScrollSpy(document.body, {
+					target: '#mainNav',
+					offset: 72,
+				});
+			};
+		
+			const navbarToggler = document.body.querySelector('.navbar-toggler');
+			const responsiveNavItems = [].slice.call(
+				document.querySelectorAll('#navbarResponsive .nav-link')
+			);
+			responsiveNavItems.map(function (responsiveNavItem) {
+				responsiveNavItem.addEventListener('click', () => {
+					if (window.getComputedStyle(navbarToggler).display !== 'none') {
+						navbarToggler.click();
+					}
+				});
+			});
+		
+		});
+		</script>
+    </head>
+    <body>
+        <!-- Barra de navegacion -->
+        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#">Juan Elias Griguelo</a>
+                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#experiencia">Experiencia</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#educacion">Educación</a></li>
+						<li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#habilidades">Habilidades</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+		<!-- Barra de navegacion -->		
+		<!-- Encabezado -->
+		<header class="masthead">
+            <div class="container d-flex align-items-center flex-column">
+                <img class="masthead-avatar mb-5" src="img/foto.jpg" alt="Juan Elias Griguelo" />
+                <h1 class="masthead-heading mb-0">Juan Elias Griguelo</h1>
+                <p class="masthead-subheading font-weight-light mb-0">Desarrollador Front End</p>
+				<br>
+                <div class="row">
+                    <div class="col-lg-6 ms-auto"><p class="lead"><strong>Nacimiento:</strong> <span>5 Dic 1970</span></p></div>
+                    <div class="col-lg-6 ms-auto"><p class="lead"><strong>Ciudad:</strong> <span>Buenos Aires, Argentina</span></p></div>
+					<div class="col-lg-6 ms-auto"><p class="lead"><strong>Freelance:</strong> <span>Disponible</span></p></div>
+					<div class="col-lg-6 me-auto"><p class="lead"><strong>Website:</strong> <span><a href="https://www.juaneliasgriguelo.com.ar">www.juaneliasgriguelo.com.ar</a></span></p></div>
+					<div class="col-lg-6 ms-auto"><p class="lead"><strong>Teléfono:</strong> <span><a href="tel:541130522245">(+54) 11 30 52 22 45</a></span></p></div>
+					<div class="col-lg-6 ms-auto"><p class="lead"><strong>Email:</strong> <span><a href="mailto:info@juaneliasgriguelo.com.ar">info@juaneliasgriguelo.com.ar</a></span></p></div>
+				</div>
+            </div>
+        </header>
+		<!-- Encabezado -->
+		<!-- Experiencia -->
+        <section class="page-section mb-0" id="experiencia">
+            <div class="container">
+                <h2 class="page-section-heading text-center">Experiencia</h2>
+                <br>
+                <div class="row">
+                    <div class="col-lg-12 ms-auto">
+						<p class="lead">Desarrollador web senior, con más de 20 años de experiencia, especializado en el desarrollo de front end. Gestor con experiencia versado en todas las etapas del ciclo de desarrollo de proyectos web dinámicos.</p>
+					</div>
+                    <div class="col-lg-12 me-auto">
+						<p class="lead"><b>DESARROLLADOR WEB. CONSULTOR EN MARKETING DIGITAL.</b></p>
+						<p class="lead"><b>2000 - Presente. (Freelance)</b></p>
+					</div>
+					<div class="col-lg-12 ms-auto">
+						<p class="lead">
+							<ul>
+								<li>Diseño y desarrollo de sitios webs personales, institucionales, comerciales y autoadministrables para diferentes rubros.</li>
+								<li>Diseño y desarrollo de sistema de inventario en plataforma web.</li>
+								<li>Desarrollo de intranet y sistema de gestión para diferentes clientes.</li>
+								<li>Desarrollo de tiendas on line para diferentes clientes.</li>
+								<li>Desarrollo de sistema gestión basado en lectura de código qr, sobre plataforma web.</li>
+								<li>Análisis de métricas webs.</li>
+								<li>Desarrollo y seguimiento de campañas ads.</li>
+								<li>Email marketing.</li>
+								<li>SEO y SEM.</li>
+							</ul>
+						</p>
+					</div>
+					<hr>
+					<div class="col-lg-12 me-auto">
+						<p class="lead"><b>DISEÑADOR Y PROGRAMADOR WEB.</b></p>
+						<p class="lead"><b>2000 - Presente. (Ferrum s.a.)</b></p>
+					</div>
+					<div class="col-lg-12 ms-auto">
+						<p class="lead">
+							<ul>
+								<li>Diseño, desarrollo y mantenimiento de interfaces para extranet / SAP HANNA. (PHP MySql).</li>
+								<li>Diseño, desarrollo y mantenimiento de intranet RR.HH. (PHP MySql).</li>
+								<li>Diseño, desarrollo y mantenimiento de sistema de gestión de ventas. (PHP MySql).</li>
+								<li>Diseño, desarrollo y mantenimiento de sistema de gestión de cobranzas. (PHP MySql).</li>
+								<li>Diseño, desarrollo y mantenimiento de sistema de tracking y gestión de moldes y piezas, identificación mediante código de barras, etc. (PHP SQL).</li>
+								<li>Diseño, desarrollo y mantenimiento de sistema de proveedores, aviso de pagos, gestión de remitos. (PHP MySql).</li>
+								<li>Diseño, desarrollo y mantenimiento de sistema de seguimiento de cargas mediante gps. (PHP MySql).</li>
+								<li>Diseño, desarrollo y mantenimiento de todos los websites de la compañia.</li>
+							</ul>
+						</p>
+					</div>
+                </div>
+            </div>
+        </section>
+		<!-- Experiencia -->
+		<hr>
+		<!-- Educacion -->
+        <section class="page-section mb-0" id="educacion">
+            <div class="container">
+                <h2 class="page-section-heading text-center">Educación</h2>
+				<br>
+                <div class="col-lg-12 me-auto">
+						<p class="lead"><b><u>Primeros pasos del desarrollo front end.</u></b></p>
+						<p class="lead"><b>2023<br>Plataforma TICMAS.COM (Argentina Programa 4.0),  Modalidad On Line</b></p>
+				</div>				
+				<hr>
+				<div class="col-lg-12 me-auto">
+						<p class="lead"><b><u>Desarrollador web.</u></b></p>
+						<p class="lead"><b>Capacitación permanente diseño y programación web</b></p>
+						<p class="lead"><b>2010 - Presente<br>In Company (Ferrum s.a.), Avellaneda, Bs. As.</b></p>
+				</div>				
+				<hr>
+				<div class="col-lg-12 me-auto">
+						<p class="lead"><b><u>Experto en marketing digital.</u></b></p>
+						<p class="lead">Introducción al Marketing Digital</p>
+						<p class="lead">Marketing de Contenidos y Viralización</p>
+						<p class="lead">Analista de Google Analytics</p>
+						<p class="lead">Especialista SEO</p>
+						<p class="lead">Community Manager</p>
+						<p class="lead"><b>2017 - 2018<br>Educación IT, C.A.B.A., Bs. As.</b></p>
+				</div>
+            </div>
+        </section>
+		<!-- Educacion -->
+		<hr>
+		<!-- Habilidades -->
+        <section class="page-section mb-0" id="habilidades">
+            <div class="container">
+                <h2 class="page-section-heading text-center">Habilidades</h2>
+                <br>
+                <div class="row">
+                    <div class="col-lg-12 ms-auto">
+						<p class="lead">Entre mis fortalezas puedo destacar las siguientes habilidades adquiridas a lo larga de tantos años de experiencia y capacitación permanente.</p>
+					</div>
+                    <div class="col-lg-6 me-auto skillpad">
+						<p class="lead">HTML5 100%</p>
+						<div class="progress">						
+							<div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					</div>
+					<div class="col-lg-6 me-auto skillpad">
+						<p class="lead">PHP 90%</p>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					</div>
+					<div class="col-lg-6 me-auto skillpad">
+						<p class="lead">CSS 80%</p>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					</div>
+					<div class="col-lg-6 me-auto skillpad">
+						<p class="lead">MySql 90%</p>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					</div>
+					<div class="col-lg-6 me-auto skillpad">
+						<p class="lead">JavaScript 90%</p>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					</div>
+					<div class="col-lg-6 me-auto skillpad">
+						<p class="lead">TECNOLOGÍA CLIENTE/SERVIDOR 90%</p>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					</div>
+                </div>
+            </div>
+        </section>
+		<!-- Habilidades -->
+		<hr>
+		<!-- Contacto-->
+        <section class="page-section" id="contacto">
+            <div class="container">
+                <h2 class="page-section-heading text-center mb-0">Contácteme</h2>
+				<br>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-xl-7">
+                        <!-- Formulario -->
+						<form id="contactForm">
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="nombre" type="text" placeholder="Ingrese su nombre..." required />
+                                <label for="nombre">Nombre</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="correo" type="email" placeholder="nombre@servidor.com" required />
+                                <label for="correo">Email</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="telefono" type="tel" placeholder="(123) 456-7890" />
+                                <label for="telefono">Teléfono</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" id="mensaje" type="text" placeholder="Ingrese el mensaje..."  required></textarea>
+                                <label for="mensaje">Mensaje</label>
+                            </div>
+							<div class="form-floating mb-3 text-center">
+								<button class="btn btn-primary btn-xl" id="submitButton" type="submit">Enviar</button>
+							</div>
+                        </form>
+						<!-- Formulario -->
+                    </div>
+                </div>
+            </div>
+        </section>
+		<!-- Contacto-->
+	</body>
+</html>
